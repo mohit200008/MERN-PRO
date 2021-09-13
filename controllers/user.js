@@ -65,8 +65,8 @@ exports.updateUser = (req, res) => {
           }
 
           return res.json(order)
-      })
-  }
+      });
+  };
 
   exports.pushOrderInPurchaseList = (req,res,next) => {
       let purchases = []
