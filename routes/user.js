@@ -6,6 +6,7 @@ const { isSignedIn, isAuthenticated } = require("../controllers/auth")
 
 router.param("UserId", getUserById)
 
+
 router.get("/user/:UserId",isSignedIn,isAuthenticated, getUser)
 
 // router.get("/users", getAllUsers)
